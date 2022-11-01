@@ -1,0 +1,25 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>MLSMM2153 JupyterLab - Start from template</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+    $('#button').click(function(e) {  
+        var inputvalue = $("#input").val();
+        window.location.replace(" https://jupyter.student-corner.be/hub/user/" + inputvalue + "/git-pull?repo=https%3A%2F%2Fforge.uclouvain.be%2Fcvandekerckh%2Fmlsmm2153&branch=main&app=lab");
+
+    });
+});
+</script> 
+</head>
+<body>
+    <p>Welcome! You will be redirected to JupyterLab.</p>
+    <p>Enter your UCLouvain login here :</p>
+       <input type="text" value="" id="input"> 
+       <button type="button" id="button">Click Me!</button>
+</body>
+</html>
